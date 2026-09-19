@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = "build/WeatherBoard.ino.bin"
+elf = "build/WeatherBoard.ino.elf"
+
