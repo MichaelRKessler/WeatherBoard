@@ -119,6 +119,7 @@ WeatherBoard/
 ├── .gitignore          # Ignores ./build/ and temporary build caches
 ├── AGENTS.md           # Guidelines for AI agents and build tooling
 ├── diagram.json        # Wokwi simulation parts and connection schema
+├── PromptingGuide.md   # Step-by-step AI prompting guide for recreating this project
 ├── README.md           # Project documentation and setup guide
 ├── WeatherBoard.ino    # Main Arduino application sketch
 └── wokwi.toml          # Wokwi simulation configuration
