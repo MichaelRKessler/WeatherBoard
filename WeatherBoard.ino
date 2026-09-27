@@ -21,7 +21,7 @@
 
 // Wi-Fi Access Point configuration
 const char* apSSID = "WeatherBoard-AP";
-const char* apPassword = ""; // Open network for easy mobile connection
+const char* apPassword = "BlueJays"; // WPA2-PSK password (8 characters)
 
 // Hardware instances
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
@@ -438,11 +438,13 @@ void setup() {
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(6, 12);
+  display.setCursor(6, 8);
   display.println("Starting WeatherBoard");
-  display.setCursor(6, 26);
+  display.setCursor(6, 22);
   display.println("SSID: WeatherBoard-AP");
-  display.setCursor(6, 40);
+  display.setCursor(6, 36);
+  display.println("Pass: BlueJays");
+  display.setCursor(6, 50);
   display.println("IP: 192.168.4.1");
   display.display();
 

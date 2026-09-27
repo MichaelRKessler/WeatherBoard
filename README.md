@@ -47,8 +47,10 @@ The complete hardware layout and simulation wiring can be found in [diagram.json
 1. Power on the ESP32 (or start the Wokwi simulation).
 2. The OLED screen and Serial Monitor will show:
    - **SSID:** `WeatherBoard-AP`
+   - **Password:** `BlueJays`
    - **IP:** `192.168.4.1`
-3. Connect your phone or laptop Wi-Fi to **`WeatherBoard-AP`** (open network, no password required by default).
+3. Connect your phone or laptop Wi-Fi to **`WeatherBoard-AP`**:
+   - When prompted for a password, enter: `BlueJays`
 4. Open your browser and navigate to:
    ```
    http://192.168.4.1
