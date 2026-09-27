@@ -24,6 +24,13 @@
       "top": -297.3,
       "left": 90.6,
       "attrs": { "temperature": "22.5", "humidity": "45" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led",
+      "top": -166.8,
+      "left": 167,
+      "attrs": { "color": "blue", "label": "Status LED (GPIO 2)" }
     }
   ],
   "connections": [
@@ -35,7 +42,9 @@
     [ "oled:SDA", "esp:D21", "blue", [ "v-9.6", "h96.07", "v-153.6", "h-153.6" ] ],
     [ "dht:VCC", "esp:3V3", "orange", [ "v-30", "h-120" ] ],
     [ "dht:GND", "esp:GND.1", "black", [ "v48", "h-38.3" ] ],
-    [ "dht:SDA", "esp:D4", "green", [ "v28.8", "h-48" ] ]
+    [ "dht:SDA", "esp:D4", "green", [ "v28.8", "h-48" ] ],
+    [ "led:A", "esp:D2", "blue", [ "v50.8", "h-107.5" ] ],
+    [ "led:C", "esp:GND.1", "black", [ "v20", "h-30" ] ]
   ],
   "dependencies": {}
 }
